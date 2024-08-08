@@ -227,6 +227,17 @@ footer {
     .styled-section .points {
         width: 350px;
     }
+
+    header nav {
+        margin-right: 30px;
+    }
+}
+
+@media (max-width: 592px) {
+
+    header nav {
+        text-align: center;
+    }
 }
 
 @media (max-width: 592px) {
