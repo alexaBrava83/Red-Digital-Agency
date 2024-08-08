@@ -1,0 +1,264 @@
+body {
+    background-color: #af0e0e;
+    color: #111;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #111;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+header .logo {
+    font-size: 24px;
+    color: #af0e0e;
+    font-weight: bold;
+}
+
+header nav {
+    flex-grow: 1;
+    text-align: right;
+    margin-right: 30px;
+}
+
+header nav a {
+    color: #fff;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+header nav a:hover {
+    color: #af0e0e;
+}
+
+.hero {
+    background-color: #af0e0e;
+    padding: 200px 20px;
+    text-align: center;
+    color: #fff;
+    
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    background-color: #111;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    border-radius: 25px;
+    font-size: 18px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.hero button:hover {
+    background-color: #ffffff;
+    color: #af0e0e;
+    transform: scale(1.05);
+}
+
+section {
+    background-color: #fff;
+    padding: 30px;
+    margin: 50px auto;
+    text-align: center;
+    border-radius: 15px;
+    width: 80%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #af0e0e;
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-cards .card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 10px;
+    flex: 1 1 200px;
+    color: #111;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-cards .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.styled-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    background-color: #111;
+    color: #fff;
+    border-radius: 15px;
+    margin: 50px 0;
+}
+
+.points {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 320px;
+    margin: 0 auto 0 auto;
+    
+}
+
+.point-item {
+    display: flex;
+    align-items: center;
+}
+
+.styled-section .points {
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    max-width: 800px;
+    text-align: left;
+}
+
+.styled-section .contact-info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
+    text-align: left;
+}
+
+.styled-section .points .point {
+    margin-bottom: 15px;
+}
+
+.styled-section .contact-info span {
+    font-weight: bold;
+}
+
+footer {
+    background-color: #111;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+}
+
+.fSize {
+    font-size: 20px;
+}
+
+#red {
+    color: #af0e0e;
+}
+
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #af0e0e;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    transition: opacity 0.3s ease;
+    z-index: 1000;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #000;
+}
+
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .styled-section {
+        padding: 20px;
+    }
+
+    .styled-section .points {
+        width: 450px;
+    }
+}
+@media (max-width: 592px) {
+    .styled-section .points {
+        width: 350px;
+    }
+}
+
+@media (max-width: 592px) {
+    header nav {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .styled-section .points {
+        width: 250px;
+    }
+}
+
+@media (max-width: 351px) {
+    .styled-section .points {
+        width: 150px;
+    }
+}
+
+.social-links a{
+    width: 36px;
+    border-radius: 4px;
+    padding: 8px 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: inline-block;
+    text-align: center;
+    margin-right: 4px;
+    font-size: 18px;
+    color: #ffffff;
+ }
+
+ .social-links a:hover {
+    background-color: #af0e0ea3;
+ }
