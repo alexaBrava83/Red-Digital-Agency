@@ -1,5 +1,6 @@
 body {
-    background-color: #af0e0e;
+    background: rgb(175,14,14);
+    background: linear-gradient(180deg, rgba(175,14,14,0.6336659663865547) 0%, rgba(16,0,20,0.68968837535014) 59%);
     color: #111;
     font-family: 'Roboto Condensed', sans-serif;
     margin: 0;
@@ -45,7 +46,8 @@ header nav a:hover {
 }
 
 .hero {
-    background-color: #af0e0e;
+    background: rgb(175,14,14);
+    background: radial-gradient(circle, rgba(175,14,14,0.6336659663865547) 0%, rgba(16,0,20,0.68968837535014) 59%);
     padding: 200px 20px;
     text-align: center;
     color: #fff;
